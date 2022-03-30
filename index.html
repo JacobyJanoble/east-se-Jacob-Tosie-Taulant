@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -24,6 +24,8 @@
         <div id="quote-container">
                 <div id="quote">
                 <h2> API QUOTE: <!--API quote in here--> </h2>
+                <h2> sadfgjdshgjl </h2>
+                </div>
         </div>
 
         <label for="select-quote">Find other quotes:</label>
@@ -37,27 +39,23 @@
         <div id="comment-container">
         <h3> Comments: </h3>
             <ul id="comment-list">
-                <hr>
-                <li>I love it!</li>
-                <!-- <button id="delete-comment">x</button> -->
-                <hr>
-                <li>Wow this is so cool!</li>
-                <hr>
+                <li>This made me feel so much better! </li>
+                <li>Wow! Much inspiration</li>
             </ul>
         </div>
 
 
         <div id="post-container"class="container">
          <h2>Leave Them a Comment</h2>
-            <form>
-            <textarea placeholder='Add Your Comment Here'></textarea>
-                <div class="btn">
-                    <input type="submit" value='Comment'>
-                    <button id='clear'>Cancel</button>
-                </div>
+            <form id ="comment-form">
+            <textarea id="addComment" placeholder='Add Your Comment Here'></textarea>
+            <div class="btn">
+            <input type="submit" value='Comment'>
+            <button id='clear'>Cancel</button>
+            </div>
             </form>
         </div>
-        </hr>
+
 
     </div>
 
