@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,6 +13,7 @@
 
 
     <div id="main-content">
+
         <h1><strong><em>Social Media Daily Quotes</em> </strong></h1>
 
         <div id="imageHere">
@@ -23,39 +24,47 @@
 
         <div id="quote-container">
                 <div id="quote">
-                <h2> API QUOTE: <!--API quote in here--> </h2>
-                <h2> sadfgjdshgjl </h2>
+                <h2> </h2>
                 </div>
         </div>
 
-        <label for="select-quote">Find other quotes:</label>
-        <select id="quote-dropdown" name="select-quote">
-          <option value="a">Today's quote ~</option>
-          <option value="b">Tomorrow's quote </option>
-          <option value="c">Yesterday's quote </option>
-        </select>
 
-        <hr>
+        <div id="dropdown-container">
+        <label for="select-quote">Find other quotes: </label>
+        <select id="quote-dropdown" name="select-quote">
+            <option value = "x">Quote of The Day!</option>
+            <option value="a">Tosie's Favourite Quote ~</option>
+            <option value="b">Jacob's Favourite Quote </option>
+            <option value="c">Taulant's Favourite Quote </option>
+        </select>
+        </div>
+
+
+        <div id="quote-container">
+
+
         <div id="comment-container">
         <h3> Comments: </h3>
             <ul id="comment-list">
-                <li>This made me feel so much better! </li>
-                <li>Wow! Much inspiration</li>
+
+
             </ul>
         </div>
 
 
         <div id="post-container"class="container">
          <h2>Leave Them a Comment</h2>
-            <form id ="comment-form">
+
+            <form id="form-container">
             <textarea id="addComment" placeholder='Add Your Comment Here'></textarea>
+
             <div class="btn">
-            <input type="submit" value='Comment'>
-            <button id='clear'>Cancel</button>
+                <input type="submit" value='Comment'>
+            </button>
             </div>
             </form>
         </div>
-
+        </hr>
 
     </div>
 
