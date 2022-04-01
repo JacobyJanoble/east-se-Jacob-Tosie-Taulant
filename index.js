@@ -6,29 +6,26 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch(BASE_URL)
         .then((res) => res.json())
         .then(data => {
-            getRandQuote(data);
             dropDownMenu(data)
         })
 
 
-    function getRandQuote(data){
-        const randomIndex = Math.floor(Math.random()*data.length);
-            document.getElementById("quote").textContent = data[randomIndex].text;
-    }
-
-
 
     // DROP DOWN MENU:
-    const dropEl = document.querySelector('#quote-dropdown')
 
     const dropDownMenu = (data) => {
+        const randomIndex = Math.floor(Math.random()*data.length);
+        document.getElementById("quote").textContent = data[randomIndex].text;
+        const dropEl = document.querySelector('#quote-dropdown')
         const myIndex = 4;
         const myIndex2 = 6;
         const myIndex3 = 17;
 
         dropEl.addEventListener('change', e => {
-            if (e.target.value == 'a'){
+            if (e.target.value == 'x'){
                 // console.log(e.target.value)
+                return document.getElementById("quote").textContent = data[randomIndex].text;
+            } else if (e.target.value == 'a') {
                 return document.getElementById("quote").textContent = data[myIndex].text;
             } else if (e.target.value == 'b'){
                 return document.getElementById("quote").textContent = data[myIndex2].text;
